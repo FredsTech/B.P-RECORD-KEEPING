@@ -1,8 +1,4 @@
 // WE will create a function that appends all the values writtend to the respective variables so that calculations can be done and the output given.
-var simplicity=()=>{
-    var d=alert("Hello there");
-    console.log(d);
-};
 
 var calculations=()=>{
 let sysA,sysB,sysC,diaA,diaB,diaC;
