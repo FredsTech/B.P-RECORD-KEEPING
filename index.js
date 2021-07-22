@@ -1,9 +1,5 @@
-let sysA;
-let sysB;
-let sysC;
-let diaA;
-let diaB;
-let diaC;
+// DECLARATION OF VARIABLES TO BE USES
+let sysA,sysB,sysC,diaA,diaB,diaC;
 
 // First Bunch
 sysA=prompt('Input first systolic pressure reading');
@@ -58,26 +54,19 @@ if (sAvg<=129&&dAvg<=84) {
 
 
 console.log(res);
-// alert(res);
+// var par=document.createElement(p);
+// par.setAttribute("id","paragraph_1");
+// var p =document.getElementById("paragraph_1");
 
-// var container=document.createElement('div');
-// var par=document.createElement('p');
-// var txt=document.createTextNode(res);
-// console.log(txt)
-// par.innerHTML=txt;
-// console.log(par);
-// document.createTextNode(par);
-// container.innerHTML=par;
+ var p =document.getElementById("answer");
+p.innerHTML=res;
 
-
-// DISPLAYING THE ANSWER ON THE DOM IS PROVING TO BE A REAL CHALLENGE ON MY SIDE MAZE BUT EVERYTHING IS WORKING PROPERLY WE WILL JUST TRY TO PUT IN SOME 
-// RULES FOR THE EMPTY FIELDS SO THAT ATLEAST A JS SOLDIER CAN BE ATTACHED TO THIS TASK OF SECURING AGANIST BLANK ENTRIES.......
 
 
 // DISPLAYING THE MESSAGE ON THE DOM A SUCCESS
-var alrt=document.getElementById('alerti');
-var pair=document.createTextNode(res);
-console.log(res);
+// var alrt=document.getElementById('alerti');
+// var pair=document.createTextNode(res);
+// console.log(res);
 
-alrt.appendChild(pair);
+// alrt.appendChild(pair);
 
