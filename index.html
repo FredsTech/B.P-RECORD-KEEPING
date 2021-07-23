@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<title>STAYING HEALTHY</title>
+</head>
+<style>
+
+    body{
+background: url("https://i0.wp.com/post.medicalnewstoday.com/wp-content/uploads/sites/3/2021/01/hypertensive_crisis_GettyImages200489720-001_Header-1024x575.jpg?w=1155&h=1528");
+background-size:cover;
+background-repeat:no-repeat;
+    }
+    .alert-heading{
+        text-align: center;
+    }
+
+    .cover{
+        background-color:rgba(255, 255, 255, 0.5);
+        padding:10px;
+        border-radius:5px;
+    }
+    .form-label{
+        padding-top:6px;
+    }
+</style>
+<body>
+<!-- ALERT SHOWING BASIC INFO -->
+<!-- ######################################################################################################################################################################## -->
+<div class="alert alert-warning alert-dismissible fade show container mb-5" role="alert">
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button> 
+
+    <h4 class="alert-heading">DIRECTIONS OF USE</h4>
+    <hr>
+    <ul class="mb-0">
+            <li>Take three measurements of your blood pressure using standard equipment recommended by WHO and at intervals of 3 minutes.</li>
+            <li>Try to relax and try to stay still for accurate measurements. </li>
+    </ul>
+  </div>
+  <!-- ############################################################################################################################################################################ -->
+<!-- FORM FOR COLLECTION OF DATA -->
+<!-- ########################################################################################################################################################################## -->
+<!-- <form> -->
+<!-- ########################################################################################################################################################################## -->
+<div class="container cover mb-5"><!--CONTAINER END -->
+<!-- ########################################################################################################################################################################## -->
+<h1 class="display-5 fw-bold text-center" >MEASUREMENTS</h1>
+<hr>
+<!-- ROUND 1 -->
+<div class="mb-5">
+<p class="fs-4 ">ROUND 1</p>
+<label for="sysA" class="form-label" >Input Your Systolic Pressure</label>
+<input type="number" id="sysA" class="form-control sysA">
+<label for="diaA" class="form-label">Input Your Diastolic Pressure</label>
+<input type="number" id="diaA" class="form-control sysA">
+</div>
+
+<!-- ROUND 2 -->
+<div class="mb-5">
+<p class="fs-4 ">ROUND 2</p>
+<label for="sysB" class="form-label">Input Your Systolic Pressure</label>
+<input type="number" id="sysB" class="form-control sysB">
+<label for="diaB" class="form-label">Input Your Diastolic Pressure</label>
+<input type="number" id="diaB" class="form-control diaB">
+</div>
+
+<!-- ROUND 3 -->
+<div class="mb-5">
+<p class="fs-4">ROUND 3</p>
+<label for="sysC" class="form-label">Input Your Systolic Pressure</label>
+<input type="number" id="sysC" class="form-control sysC">
+<label for="diaC" class="form-label">Input Your Diastolic Pressure</label>
+<input type="number" id="diaC" class="form-control diaC">
+</div>
+<!-- FORM CHECK -->
+<!-- <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div> -->
+<!-- SUBMIT BUTTON -->
+<div class="row container mb-3">
+<div class="col-6 text-center" ><button type="submit" class="btn btn-outline-success" onclick="calculations()">Submit</button></div>
+<div class="col-6 text-center"><button class="btn btn-outline-danger" onClick="window.location.reload();">Clear</button></div>
+</div>
+<!-- </form> -->
+<!-- ############################################################################################################################################################################ -->
+ </div> <!--CONTAINER END -->
+<!-- ############################################################################################################################################################################ -->
+
+
+<!-- RESULTS ALERT  -->
+<!-- ############################################################################################################################################################################ -->
+<div class="alert alert-info alert-dismissible fade show container" role="alert">
+    <h4 class="alert-heading fs-3"> BLOOD PRESSURE STATUS</h4>
+<hr>
+    <p class="mb-0"  id="answer"></p>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button> 
+  </div>
+
+
+<!-- ############################################################################################################################################################################ -->
+
+
+<!-- BOOTSTRAP LINKS -->
+<!-- <script src="index.js"></script> -->
+<script src="B.P DOM.js"></script>
+<!-- <script src="tests.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
