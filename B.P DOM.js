@@ -7,21 +7,21 @@ let sysA,sysB,sysC,diaA,diaB,diaC;
  diaA=document.getElementById("diaA").value;
 
 
- sysB=document.getElementById("sysA").value;
- diaB=document.getElementById("diaA").value;
+ sysB=document.getElementById("sysB").value;
+ diaB=document.getElementById("diaB").value;
 
 
- sysC=document.getElementById("sysA").value;
- diaC=document.getElementById("diaA").value;
+ sysC=document.getElementById("sysC").value;
+ diaC=document.getElementById("diaC").value;
  
 console.log(sysA,sysB,sysC,diaA,diaB,diaC);
 
 // We now go to the conditions computer A
 // SYSTOLIC PRESSURE TOTAL
-let sysTotal=(+sysA + +sysB + +sysC);
+let sysTotal=(+sysA+ +sysB+ +sysC);
 console.log(sysTotal);
 // DIASTOLIC PRESSURE TOTAL
-let diaTotal=(+diaA + +diaB + +diaC);
+let diaTotal=(+diaA+ +diaB+ +diaC);
 console.log(diaTotal);
 
 // SYSTOLIC PRESSURE AVERAGE
@@ -48,14 +48,7 @@ if (sAvg<=129&&dAvg<=84) {
 
 
 console.log(res);
-// var par=document.createElement(p);
-// par.setAttribute("id","paragraph_1");
-// var p =document.getElementById("paragraph_1");
-
 var p =document.getElementById("answer");
 p.innerHTML=res;
 
 };
-
-
-// calculations();
