@@ -1,2 +1,4 @@
 # B.P-RECORD-KEEPING
-This is a simple application that helps to keep track of your blood pressure measurement values and gives you all the information that you need to know about your heart health.
+A simple web application that keeps track of the state of your heart.
+
+<img src="./images/homepage" width=100/>
