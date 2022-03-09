@@ -6,12 +6,12 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="Description" content="Enter your description here"/>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<title>STAYING HEALTHY</title>
+<title>HEART HEALTH.</title>
 </head>
 <style>
 
     body{
-background: url("https://i0.wp.com/post.medicalnewstoday.com/wp-content/uploads/sites/3/2021/01/hypertensive_crisis_GettyImages200489720-001_Header-1024x575.jpg?w=1155&h=1528");
+background: url("https://www.nih.gov/sites/default/files/news-events/research-matters/2009/20090803-bloodpressure.jpg");
 background-size:cover;
 background-repeat:no-repeat;
     }
@@ -27,14 +27,23 @@ background-repeat:no-repeat;
     .form-label{
         padding-top:6px;
     }
+
+    .accordion-button{
+      background-color:rgb(94, 60, 60) !important;
+    }
+
+    a {
+      color:black !important;
+    }
+
 </style>
 <body>
 <!-- ALERT SHOWING BASIC INFO -->
 <!-- ######################################################################################################################################################################## -->
-<div class="alert alert-warning alert-dismissible fade show container mb-5" role="alert">
+<div class="alert alert-info alert-dismissible fade show container mb-5" role="alert">
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button> 
     <a class="accordion-button btn-outline-info" data-bs-toggle="collapse" href="#defination" role="button" aria-expanded="false" aria-controls="collapseExample">
-        DEFINATION OF TERMS
+        GENERAL TERMS
       </a>
     <hr>
     <div class="collapse" id="defination">
@@ -60,13 +69,32 @@ background-repeat:no-repeat;
 </div>
   </div>
   <!-- ############################################################################################################################################################################ -->
+<!-- MODAL DATA AFTER SUCCESSFULL SUBMISSION OF DATA. -->
+<!-- ==================================================== -->
+
+<div class="modal" id="infoModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">INFORMATION</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Your blood pressure for date : __________ has been recorded successfully.</p>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- ############################################################################################################################################################################ -->
+
+  <!-- ############################################################################################################################################################################ -->
 <!-- FORM FOR COLLECTION OF DATA -->
 <!-- ########################################################################################################################################################################## -->
 <!-- <form> -->
 <!-- ########################################################################################################################################################################## -->
 <div class="container cover mb-5"><!--CONTAINER END -->
 <!-- ########################################################################################################################################################################## -->
-<h1 class="display-5 fw-bold text-center" >MEASUREMENTS</h1>
+<h1 class="display-5 fw-bold text-center">DAILY MEASUREMENTS</h1>
 <hr>
 <!-- ROUND 1 -->
 <div class="mb-5">
@@ -101,7 +129,7 @@ background-repeat:no-repeat;
   </div> -->
 <!-- SUBMIT BUTTON -->
 <div class="row container mb-3">
-<div class="col-6 text-center" ><button type="submit" class="btn btn-outline-success" onclick="calculations()">Submit</button></div>
+<div class="col-6 text-center" ><button type="submit" class="btn btn-outline-success" onclick=calculations() data-bs-toggle="modal" data-bs-target="#infoModal" >Submit</button></div>
 <div class="col-6 text-center"><button class="btn btn-outline-danger" onClick="window.location.reload();">Clear</button></div>
 </div>
 <!-- </form> -->
