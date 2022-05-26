@@ -1,8 +1,13 @@
-// WE will create a function that appends all the values writtend to the respective variables so that calculations can be done and the output given.
+// PERFORMING THE CALCULATIONS
+//==============================
 
-var calculations = () => {
-  let sysA, sysB, sysC, diaA, diaB, diaC;
-
+var calculations = (e) => {
+  e.preventDefault();
+  // GETTING THE UPDATED DATA FROM THE DOM
+  //========================================
+  let sysA, sysB, sysC, diaA, diaB, diaC, p, form;
+  form = document.getElementsByClassName("formData")[0];
+  console.log(form);
   sysA = document.getElementById("sysA").value;
   diaA = document.getElementById("diaA").value;
 
@@ -11,21 +16,13 @@ var calculations = () => {
 
   sysC = document.getElementById("sysC").value;
   diaC = document.getElementById("diaC").value;
+  p = document.getElementById("answer");
 
-  let message = "Your blood pressure has been recorded successfully.";
-  // We now go to the conditions computer A
-  // SYSTOLIC PRESSURE TOTAL
   let sysTotal = +sysA + +sysB + +sysC;
-  // DIASTOLIC PRESSURE TOTAL
   let diaTotal = +diaA + +diaB + +diaC;
 
-  // SYSTOLIC PRESSURE AVERAGE
   let sAvg = Math.floor(sysTotal / 3);
-
-  //  DIATOLIC PRESSURE AVERAGE
   let dAvg = Math.floor(diaTotal / 3);
-
-  // GRADING THE RESPONSE USING THE IF LOOP
 
   if (sAvg <= 129 && dAvg <= 84) {
     res =
@@ -84,6 +81,14 @@ var calculations = () => {
       "You have severe hypertension.Consult a medic immediately for swift assistance.";
   }
 
-  var p = document.getElementById("answer");
   p.innerHTML = res;
+
+  setTimeout(() => {
+    p.innerHTML = " ";
+    form.reset();
+  }, 1500);
+};
+
+const clearingScreen = () => {
+  window.location.reload();
 };
