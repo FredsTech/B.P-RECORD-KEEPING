@@ -7,7 +7,6 @@ var calculations = (e) => {
   //========================================
   let sysA, sysB, sysC, diaA, diaB, diaC, p, form;
   form = document.getElementsByClassName("formData")[0];
-  console.log(form);
   sysA = document.getElementById("sysA").value;
   diaA = document.getElementById("diaA").value;
 
